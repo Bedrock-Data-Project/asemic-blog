@@ -46,6 +46,7 @@ jobs:
             - name: Build with VitePress
               run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
               env:
+                  APP_URL: ${{ secrets.APP_URL }}
                   UMAMI_SRC: ${{ secrets.UMAMI_SRC }}
                   UMAMI_WEBSITE_ID: ${{ secrets.UMAMI_WEBSITE_ID }}
                   ENVIRONMENT: production
