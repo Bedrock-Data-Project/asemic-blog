@@ -1,9 +1,8 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-    name: "Asemic"
+    name: "Asemic Blog"
     text: "DWH-native product analytics platform"
     tagline: Ulock your data
     image:
@@ -12,25 +11,21 @@ hero:
     actions:
         - theme: brand
           text: Get Started
-          link: /get-started/introduction
+          link: /analysis-is-about-building-dataset
         - theme: alt
           text: Launch App
           link: http://35.244.200.118/
 
 features:
-    - title: Key Concepts
-      details: Learn about the foundations of Asemic
-      link: /get-started/key-concepts.md
+    - title: Analysis is about building dataset
+      details: "When we think of data analysis, we often envision complex dashboards, charts, and reports that reveal insights and drive decision-making. But there's a crucial, often-overlooked component that underpins all of these outputs: the data model."
+      link: /analysis-is-about-building-dataset
 
-    - title: Data Integration
-      details: Set up integration
-      link: /advanced-topics/connecting-data-sources
+    - title: New Approach to Semantic Layer
+      details: At Asemic, we’ve developed a new approach tailored specifically for Product Analytics. Our solution prioritizes business-level design while letting the application take care of the physical modeling, allowing users to seamlessly work with behavioral data.
+      link: /new-approach-to-semantic-layer-modeling
 
-    - title: Dashboards
-      details: KPI as a first-class citizen
-      link: /capabilities/
-
-    - title: Time Travel
-      details: Segment by any past state of a user
-      link: /capabilities/time-travel.md
+    - title: Why events for user analytics?
+      details: "In the world of product analytics, events have become the de facto standard for tracking user behavior. Every click, every page view, every transaction gets logged as a discrete event. Let's explore why events might not be the ideal foundation for user analytics and how we can bridge this conceptual gap."
+      link: /why-events-for-user-analytics
 ---
