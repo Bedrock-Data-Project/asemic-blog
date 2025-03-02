@@ -12,9 +12,9 @@ hero:
         - theme: brand
           text: Get Started
           link: /analysis-is-about-building-dataset
-        - theme: alt
-          text: Launch App
-          link: http://35.244.200.118/
+        # - theme: alt
+        #   text: Launch App
+        #   link: http://35.244.200.118/
 
 features:
     - title: Analysis is about building dataset
