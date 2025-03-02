@@ -4,7 +4,7 @@ layout: home
 hero:
     name: "Asemic Blog"
     text: "DWH-native product analytics platform"
-    tagline: Ulock your data
+    tagline: Unlock your data
     image:
         src: /img/hero.png
         alt: Asemic
