@@ -10,7 +10,7 @@ hero:
         alt: Asemic
     actions:
         - theme: brand
-          text: Get Started
+          text: Start Reading
           link: /analysis-is-about-building-dataset
         # - theme: alt
         #   text: Launch App
@@ -28,4 +28,8 @@ features:
     - title: Why events for user analytics?
       details: "In the world of product analytics, events have become the de facto standard for tracking user behavior. Every click, every page view, every transaction gets logged as a discrete event. Let's explore why events might not be the ideal foundation for user analytics and how we can bridge this conceptual gap."
       link: /why-events-for-user-analytics
+
+    - title: Modeling User Behavior in Freemium
+      details: "Debunking the myth: Why paying users show higher retention in freemium products.."
+      link: /Modeling-User-Behavior-in-Freemium-Part-1
 ---
