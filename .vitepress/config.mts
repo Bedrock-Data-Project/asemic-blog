@@ -5,14 +5,17 @@ import { getHead, transformHead } from "./head.ts";
 const { sidebar, rewrites } = generateLinks();
 
 export default defineConfig({
-    title: "Asemic Blog",
+    title: "Asemic Blog - Insights on Product Analytics & Data Modeling",
     head: getHead(),
-    description: "Advanced product analytics platform",
+    description: "Explore insights on product analytics, data modeling, semantic layers, and user behavior analysis. Learn about freemium metrics, DWH-native analytics, and modern data architecture.",
     srcDir: "docs",
     transformHead: ({ pageData }) => transformHead(pageData),
     rewrites: rewrites,
     cleanUrls: true,
     ignoreDeadLinks: true,
+    sitemap: {
+        hostname: "https://blog.asemicanalytics.com",
+    },
     themeConfig: {
         search: {
             provider: "local",

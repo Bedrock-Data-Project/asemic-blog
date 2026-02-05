@@ -45,11 +45,18 @@ export function getHead() {
 export function transformHead(pageData: PageData) {
     const head: HeadConfig[] = [];
 
-    const title = pageData.frontmatter.title;
-    const description = pageData.frontmatter.description;
+    const title = pageData.frontmatter.title || pageData.title;
+    const description = pageData.frontmatter.description || pageData.description;
     const pageUrl = getPageUrl(pageData.relativePath);
     const imageUrl = getImageUrl(pageData.frontmatter.image);
     console.log(imageUrl);
+
+    // Add canonical URL
+    if (pageUrl) {
+        head.push(["link", { rel: "canonical", href: pageUrl }]);
+    }
+
+    // Open Graph tags
     if (title) {
         head.push(["meta", { property: "og:title", content: title }]);
         head.push(["meta", { property: "twitter:title", content: title }]);
@@ -89,6 +96,9 @@ export function transformHead(pageData: PageData) {
     head.push(["meta", { property: "og:image", content: imageUrl }]);
     head.push(["meta", { property: "twitter:image", content: imageUrl }]);
     head.push(["meta", { property: "linkedin:image", content: imageUrl }]);
+
+    // Add site name
+    head.push(["meta", { property: "og:site_name", content: "Asemic Blog" }]);
 
     return head;
 }
